@@ -1,0 +1,128 @@
+:root {
+    --primary: #1f4e79;
+    --primary-soft: #e9f1fb;
+    --success: #27ae60;
+    --warning: #f39c12;
+    --danger: #dc3545;
+    --info: #17a2b8;
+    --dark: #1f2937;
+    --light: #f6f8fb;
+    --muted: #6b7280;
+    --border: #dfe7f1;
+}
+
+body {
+    background: linear-gradient(180deg, #f4f7fb 0%, #eef4fb 100%);
+    color: var(--dark);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary), #2d6bb1);
+}
+
+.hero-section {
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(31,78,121,0.12);
+}
+
+.mini-stat, .stat-card, .feature-card, .quick-action-card, .job-card, .card {
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 22px rgba(15, 33, 55, 0.06);
+}
+
+.mini-stat {
+    padding: 1.2rem;
+}
+
+.feature-card, .quick-action-card, .job-card {
+    padding: 1.5rem;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.step-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eceff3;
+}
+
+.auth-card {
+    margin-top: 2rem;
+}
+
+.stat-card {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #fff, #f2f8ff);
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.score-card {
+    background: linear-gradient(135deg, #edf9f0, #ffffff);
+}
+
+.skill-badge {
+    background: #dfeefd;
+    color: #1d4f91;
+    border-radius: 999px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.skill-badge-soft {
+    background: #e8f8ef;
+    color: #187a46;
+    border-radius: 999px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.keyword-badge {
+    background: #f3eafc;
+    color: #6e3bb0;
+    border-radius: 999px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .d-flex.justify-content-between {
+        display: block !important;
+    }
+}
